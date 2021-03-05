@@ -1,6 +1,6 @@
-export const rootReducer = (state, action) => {
-    switch(action.type) {
-        default: 
-        return state
-    }
-}
+import { combineReducers } from 'redux'
+import { charactersReducer } from './characters/characters'
+
+export default combineReducers({
+    characters: charactersReducer,
+})
